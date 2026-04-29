@@ -58,7 +58,7 @@ async def handle_text(message: types.Message):
     text = message.text
     user_texts[message.from_user.id] = text
 
-    # Определяем язык источника для исключения из кнопок
+
     source_lang = "ru" if is_russian(text) else "en"
 
     await message.answer(
